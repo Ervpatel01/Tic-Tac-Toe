@@ -28,10 +28,12 @@ const resetgame = () => {
 btn.forEach((btn) => {
   btn.addEventListener("click" , () => {
     if(turn) {
+      btn.classList.add("color1");
       btn.textContent = "O";
       turn = false; 
       count++;
     } else {
+      btn.classList.add("color2");
       btn.textContent = "X";
       turn = true;
       count++;
